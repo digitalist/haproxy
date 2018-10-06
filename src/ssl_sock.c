@@ -6177,7 +6177,7 @@ smp_fetch_ssl_fc_has_crt(const struct arg *args, struct sample *smp, const char 
 
 /* binary, returns a certificate in a binary chunk (der/raw).
  * The 5th keyword char is used to know if SSL_get_certificate or SSL_get_peer_certificate
- * should be use.
+ * should be used.
  */
 static int
 smp_fetch_ssl_x_der(const struct arg *args, struct sample *smp, const char *kw, void *private)
@@ -6221,7 +6221,7 @@ out:
 
 /* binary, returns serial of certificate in a binary chunk.
  * The 5th keyword char is used to know if SSL_get_certificate or SSL_get_peer_certificate
- * should be use.
+ * should be used.
  */
 static int
 smp_fetch_ssl_x_serial(const struct arg *args, struct sample *smp, const char *kw, void *private)
@@ -6265,7 +6265,7 @@ out:
 
 /* binary, returns the client certificate's SHA-1 fingerprint (SHA-1 hash of DER-encoded certificate) in a binary chunk.
  * The 5th keyword char is used to know if SSL_get_certificate or SSL_get_peer_certificate
- * should be use.
+ * should be used.
  */
 static int
 smp_fetch_ssl_x_sha1(const struct arg *args, struct sample *smp, const char *kw, void *private)
@@ -6310,7 +6310,7 @@ out:
 
 /* string, returns certificate's notafter date in ASN1_UTCTIME format.
  * The 5th keyword char is used to know if SSL_get_certificate or SSL_get_peer_certificate
- * should be use.
+ * should be used.
  */
 static int
 smp_fetch_ssl_x_notafter(const struct arg *args, struct sample *smp, const char *kw, void *private)
@@ -6353,7 +6353,7 @@ out:
 
 /* string, returns a string of a formatted full dn \C=..\O=..\OU=.. \CN=.. of certificate's issuer
  * The 5th keyword char is used to know if SSL_get_certificate or SSL_get_peer_certificate
- * should be use.
+ * should be used.
  */
 static int
 smp_fetch_ssl_x_i_dn(const struct arg *args, struct sample *smp, const char *kw, void *private)
@@ -6410,7 +6410,7 @@ out:
 
 /* string, returns notbefore date in ASN1_UTCTIME format.
  * The 5th keyword char is used to know if SSL_get_certificate or SSL_get_peer_certificate
- * should be use.
+ * should be used.
  */
 static int
 smp_fetch_ssl_x_notbefore(const struct arg *args, struct sample *smp, const char *kw, void *private)
@@ -6453,7 +6453,7 @@ out:
 
 /* string, returns a string of a formatted full dn \C=..\O=..\OU=.. \CN=.. of certificate's subject
  * The 5th keyword char is used to know if SSL_get_certificate or SSL_get_peer_certificate
- * should be use.
+ * should be used.
  */
 static int
 smp_fetch_ssl_x_s_dn(const struct arg *args, struct sample *smp, const char *kw, void *private)
@@ -6537,7 +6537,7 @@ smp_fetch_ssl_c_used(const struct arg *args, struct sample *smp, const char *kw,
 
 /* integer, returns the certificate version
  * The 5th keyword char is used to know if SSL_get_certificate or SSL_get_peer_certificate
- * should be use.
+ * should be used.
  */
 static int
 smp_fetch_ssl_x_version(const struct arg *args, struct sample *smp, const char *kw, void *private)
@@ -6573,7 +6573,7 @@ smp_fetch_ssl_x_version(const struct arg *args, struct sample *smp, const char *
 
 /* string, returns the certificate's signature algorithm.
  * The 5th keyword char is used to know if SSL_get_certificate or SSL_get_peer_certificate
- * should be use.
+ * should be used.
  */
 static int
 smp_fetch_ssl_x_sig_alg(const struct arg *args, struct sample *smp, const char *kw, void *private)
@@ -6623,7 +6623,7 @@ smp_fetch_ssl_x_sig_alg(const struct arg *args, struct sample *smp, const char *
 
 /* string, returns the certificate's key algorithm.
  * The 5th keyword char is used to know if SSL_get_certificate or SSL_get_peer_certificate
- * should be use.
+ * should be used.
  */
 static int
 smp_fetch_ssl_x_key_alg(const struct arg *args, struct sample *smp, const char *kw, void *private)
@@ -6745,7 +6745,7 @@ smp_fetch_ssl_fc_cipher(const struct arg *args, struct sample *smp, const char *
 	return 1;
 }
 
-/* integer, returns the algoritm's keysize if front conn. transport layer
+/* integer, returns the algorithm's keysize if front conn. transport layer
  * is SSL.
  * This function is also usable on backend conn if the fetch keyword 5th
  * char is 'b'.
